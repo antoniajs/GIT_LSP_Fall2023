@@ -21,7 +21,7 @@ public class Assignment2 {
 						hashmap.put(separated[x], 1); //setting number of occurrences to 1
 					}
 					else {
-						hashmap.put(separated[x], hashmap.get(separated[x]) + 1); //increasing occurrences
+						hashmap.put(separated[x], hashmap.get(separated[x]) + 1); //increasing the number of occurrences
 					}
 				}
 			}
