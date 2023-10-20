@@ -8,8 +8,7 @@ public class Driver{
 		
 		System.out.println("Book1 equals Book2: " + book1.equals(book2));
 		System.out.println("Book1 equals Book3: " + book1.equals(book3));
-		System.out.println("Display of book's title, author, and year: " + book1.toString());
-		
+		System.out.println("Display of book's title, author, and year: " + book1.toString());	
 	}
 	
 }
