@@ -67,11 +67,33 @@ public class IntegerSetTest {
 	}
 	
 	@Test
+	@DisplayName("Test case for largest() with Exception Handling")
+	public void testLargestforExceptionHandling() {
+		Exception exception = assertThrows(IntegerSetException.class, () -> {integerSet.largest(); });
+		
+		String expectedMessage = "Set is empty";
+		String actualMessage = exception.getMessage();
+		
+		assertTrue(actualMessage.contains(expectedMessage));
+	}
+	
+	@Test
 	@DisplayName("Test case for smallest()")
 	public void testSmallest() {
 		integerSet.add(7);
 		integerSet.add(8);
 		assertEquals(integerSet.smallest(), 7);
+	}
+	
+	@Test
+	@DisplayName("Test case for smallest() with Exception Handling")
+	public void testSmallestforExceptionHandling() {
+		Exception exception = assertThrows(IntegerSetException.class, () -> {integerSet.smallest(); });
+		
+		String expectedMessage = "Set is empty";
+		String actualMessage = exception.getMessage();
+		
+		assertTrue(actualMessage.contains(expectedMessage));
 	}
 	
 	@Test
